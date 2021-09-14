@@ -6,6 +6,15 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="img/logo_1.png" type="img/png" sizes="16x16">
 </head>
+<style type="text/css">
+  .item{
+    transition: .5s ease-in-out;
+  }
+  .item:hover{
+    filter:brightness(80%);
+  }
+  
+  </style>
 <body>
 <!-- partial:index.partial.html -->
 <!doctype html>
@@ -20,8 +29,22 @@
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/332a215f17.js" cross origin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">   
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+
 <title>Grovect Engineering</title>
   </head>
+  <style type="text/css">
+    .item{
+      transition: .5s ease-in-out;
+    }
+    .item:hover{
+      filter:brightness(80%);
+    }
+    
+    </style>
   <body>
 
     <div class="container-fluid icons py-2 px-3 ">
@@ -33,8 +56,8 @@
                <a href="https://www.linkedin.com/in/grovect-engineering-34b135202/" class="mx-2">
                    <i class="fab fa-linkedin"></i>
                </a>
-               <a href="#" class="mx-2">
-                  <i class="fab fa-twitter"></i>
+               <a href="https://www.youtube.com/watch?v=rhty6BPXfmE" class="mx-2">
+                  <i class="fab fa-youtube"></i>
               </a>
               <a href="https://www.instagram.com/grovectengineering/" class="mx-2">
                   <i class="fab fa-instagram"></i>
@@ -46,10 +69,9 @@
   <!-- header-dummy -->
   
 
-  <nav class="navbar navbar-expand-xl navbar-light bg-light sticky-top">
-    <img src="img/logo_1.png" width="40" height="40" class="d-inline-block align-top" alt="">
-   <h4> Grovect Engineering</h4>
-   </a>
+  <nav class="navbar navbar-expand-xl navbar-light sticky-top">
+   <a href="#"> <img src="img/logo_1.png" width="40" height="40" class="d-inline-block align-top" alt=""></a>
+   <h4 class="mx-2 mt-2"> Grovect Engineering</h4>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,25 +81,23 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="#about">About us</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">Presentation</a>
+          <a class="nav-link" href="#presentation">Presentation</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">Contact us</a>
+          <a class="nav-link" href="#contact">Contact us</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#">Clients</a>
+          <a class="nav-link" href="#carrers">Carrers</a>
         </li>
-
-        
       </ul>
       
     </div>
@@ -90,14 +110,14 @@
       <div class="top-banner">
           <div class="content">
               <div class="text ">
-                 <h1>Grovect Engineering</h1>
+                 <h2>Grovect Engineering</h2>
                  <p>
                   Future is with Grovect Engineering<br>
                   Best Enginneering Firm at your disposal!<br>
                   Expertise      Commitment      Value</p>
                  <div class="main-btn">
-                  <a href="#contacts" class="btn btn-main btn-lg m-3">Contact us</a>
-                  <a href="#about_us" class="btn btn-main btn-lg m-3">Know More</a>
+                  <a href="#contact" class="btn btn-main btn-lg m-3">Contact us</a>
+                  <a href="#about" class="btn btn-main btn-lg m-3">Know More</a>
                  </div>
               </div>
           </div>
@@ -108,7 +128,7 @@
 
          <!--End of Banner-->
          <!--About Section----->
-         <section id="about_us">
+         <section id="about">
              <div class="container">
                  <div class="about mb-4">
                      <div class="row text-center m-4">
@@ -145,7 +165,7 @@
                   <div class="row text-center m-4">
                       <div class="col-md-12 text-center">
                         <h2 class="mb-4">Projects</h2>
-                          <span class="title-border"></span>
+                          <span class="title-border bg-light"></span>
                           <p class="text-light">Lorem ipsum dolor sit amet consectetur 
                          adipisicing elit. Nisi praesentium assumenda 
                          eveniet error repellendus, delectus, molestias 
@@ -156,81 +176,36 @@
                   </div>
                   <!--Parts-->
                   <div class="row text-center">
-                      <div class="col-lg-4 my-2">
-                        <div class="project-container"><!--box-->
-                          <div class="img-content"><!--imgBx-->
-                          <img src="img/products/tab_1.jpg" alt=""class="img-fluid project-img">
-                        </div>
-                        <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                            Commercial</h3>
-                        <p class="text-dark">Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                          </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!--End of img-container-->
-                      <!--end of part 1-->
-                      <div class="col-lg-4 my-2">
-                        <div class="project-container"><!--box-->
-                          <div class="img-content"><!--imgBx-->
-                          <img src="img/products/tab_2.png" alt=""class="img-fluid project-img">
-                        </div>
-                        <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                            shaft</h3>
-                        <p class="text-dark">Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                          </p>
-                          </div>
-                        </div>
-                      </div>
+                    
                       <!--End of img-container-->
                            <!--Part 3-->
                       <div class="col-lg-4 my-2">
-                        <div class="project-container"><!--box-->
-                          <div class="img-content"><!--imgBx-->
-                          <img src="img/products/tab_3.jpg" alt=""class="img-fluid project-img">
-                        </div>
-                        <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                            Turn Table</h3>
-                        <p class="text-dark">Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                           Lorem ipsum dolor sit amet
-                           consectetur adipisicing elit.
-                          </p>
+                        
+                          <div class="project-container"><!--box-->
+                            <div class=" img-content"><!--imgBx-->
+                              <a href="img/products/tab_5.jpg" class="fancybox" data-fancybox="gallery1"></a>
+                            <img src="img/products/tab_5.jpg" alt="tab5"class="img-fluid project-img">
                           </div>
-                        </div>
+                          <div class="content">
+                            <h5 class="text-uppercase text-center text-dark px-3">
+                              Turn Table</h5>
+                          <p class="text-dark">Lorem ipsum dolor sit amet
+                             consectetur adipisicing elit.
+                             Lorem ipsum dolor sit amet
+                             consectetur adipisicing elit.
+                             Lorem ipsum dolor sit amet
+                             consectetur adipisicing elit.
+                             Lorem ipsum dolor sit amet
+                             consectetur adipisicing elit.
+                             Lorem ipsum dolor sit amet
+                             consectetur adipisicing elit.
+                             Lorem ipsum dolor sit amet
+                             consectetur adipisicing elit.
+                            </p>
+                            </div>
+                          </div>
+                        
+                       
                       </div>
                       <!--End of img-container-->  
                        <!--end of part 4-->
@@ -240,8 +215,8 @@
                           <img src="img/products/tab_4.png" alt=""class="img-fluid project-img">
                         </div>
                         <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                            cutter</h3>
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                            cutter</h5>
                         <p class="text-dark">Lorem ipsum dolor sit amet
                            consectetur adipisicing elit.
                            Lorem ipsum dolor sit amet
@@ -263,11 +238,11 @@
                        <div class="col-lg-4 my-2">
                         <div class="project-container"><!--box-->
                           <div class="img-content"><!--imgBx-->
-                          <img src="img/products/tab_5.jpg" alt=""class="img-fluid project-img">
+                          <img src="img/products/tab_10.jpg" alt=""class="img-fluid project-img">
                         </div>
                         <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                            shaft</h3>
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                            shaft</h5>
                         <p class="text-dark">Lorem ipsum dolor sit amet
                            consectetur adipisicing elit.
                            Lorem ipsum dolor sit amet
@@ -292,8 +267,8 @@
                           <img src="img/products/tab_6.jpg" alt=""class="img-fluid project-img">
                         </div>
                         <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                           shaft</h3>
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                           shaft</h5>
                         <p class="text-dark">Lorem ipsum dolor sit amet
                            consectetur adipisicing elit.
                            Lorem ipsum dolor sit amet
@@ -318,8 +293,8 @@
                           <img src="img/products/tab_7.jpg" alt=""class="img-fluid project-img">
                         </div>
                         <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                           Cutter</h3>
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                           Cutter</h5>
                         <p class="text-dark">Lorem ipsum dolor sit amet
                            consectetur adipisicing elit.
                            Lorem ipsum dolor sit amet
@@ -344,8 +319,8 @@
                           <img src="img/products/tab_8.jpg" alt=""class="img-fluid project-img">
                         </div>
                         <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                            Roller</h3>
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                            Roller</h5>
                         <p class="text-dark">Lorem ipsum dolor sit amet
                            consectetur adipisicing elit.
                            Lorem ipsum dolor sit amet
@@ -370,8 +345,8 @@
                           <img src="img/products/tab_9.jpg" alt=""class="img-fluid project-img">
                         </div>
                         <div class="content">
-                          <h3 class="text-uppercase text-center text-dark px-3">
-                            Flat Machine</h3>
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                            Flat Machine</h5>
                         <p class="text-dark">Lorem ipsum dolor sit amet
                            consectetur adipisicing elit.
                            Lorem ipsum dolor sit amet
@@ -388,7 +363,57 @@
                           </div>
                         </div>
                       </div>
+
                       <!--End of img-container-->
+                      <div class="col-lg-4 my-2">
+                        <div class="project-container"><!--box-->
+                          <div class="img-content"><!--imgBx-->
+                          <img src="img/products/tab_1.jpg" alt=""class="img-fluid project-img">
+                        </div>
+                        <div class="content">
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                            Flat Machine</h5>
+                        <p class="text-dark">Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                          </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 my-2">
+                        <div class="project-container"><!--box-->
+                          <div class="img-content"><!--imgBx-->
+                          <img src="img/products/tab_3.jpg" alt=""class="img-fluid project-img">
+                        </div>
+                        <div class="content">
+                          <h5 class="text-uppercase text-center text-dark px-3">
+                            Flat Machine</h5>
+                        <p class="text-dark">Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                           Lorem ipsum dolor sit amet
+                           consectetur adipisicing elit.
+                          </p>
+                          </div>
+                        </div>
+                      </div>
                                                
                   </div>
               </div>
@@ -517,19 +542,19 @@
           </div>
                    
             </div>
-            
-          
          <!--End of Services-->
+            <!-- project-2 -->
+
+          
+
+            <!-- project-2 -->
+
          <!-- Video Section -->
         <div id="presentation" class="container">
 
           <div class="row">
             <div class="col-md-11 text-center">
-                <h2 class="mx-30s">Presentation</h2>
-                <span class="title-border"></span>
-                <hr>
-                
-                        
+                <div class="section-head"><h4 ><span></span> Presentation</h4></div> 
              </div>
         </div>
           <div class="embed-responsive embed-responsive-16by9">
@@ -553,8 +578,8 @@
             <div class="row">
                 
                 <div class="col-md-11 text-center">
-                    <h2>Contact Us</h2>
-                    <span class="title-border"></span>
+                  <div class="section-head"><h4 ><span>Contact</span> us</h4></div> 
+                    <!-- <span class="title-border"></span> -->
                   
                     <!-- <a href="#contacts" class="btn btn-main-1 btn-lg m-3">Give us a shot</a>
                              <p>Lorem ipsum dolor sit amet consectetur 
@@ -562,17 +587,17 @@
                  </div>
             </div>
             <div class="row contact">
-                <div class="col-md-4 text-center">
+                <div class="col-md-3 text-center">
                     <i class="fas fa-mobile-alt fa-3x color"></i>
                     <h5 class="mt-3">Phone</h5>
                     <p>9399876401/9340421987</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-5 text-center">
                     <i class="fas fa-map-marker-alt fa-3x color"></i>
-                    <h5 class="mt-3">Address</h5>
+                    <h5 class="p-10 mt-3">Address</h5>
                     <p>Pithampur, Madhya Pradesh, India</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-3 text-center">
                     <i class="far fa-envelope-open fa-3x color"></i>
                     <h5 class="mt-3">Email</h5>
                     <p>grovectengineering@gmail.com</p>
@@ -622,15 +647,16 @@
 <!-- copyright -->
 <!-- Footer -->
 <div class="copy">
-  <div class="container">
+  <div class="container-fluid">
     <footer class="page-footer font-small blue">
 
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        Grovect engineering
+        Grovect engineering  <br>   All rights reserved                                  
       </div>
+      <!-- <h7>designed by:<a href="#"> Darshan Hirekurubar</a></h7> -->
       <!-- Copyright -->
-    
+      
     </footer>
   </div>
 </div>
