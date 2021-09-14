@@ -6,23 +6,7 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
 }
-.tag{
-    color:white;
-}
-.icons{
-    background: #25509c;
-    text-decoration: none;
-    color: #fff;
-}
-.icons a{
-    font-size: 25px;
-    transition: color 1s ease;
-    color: #fff;
-}
-.icons a:hover{
-    color: lightblue;
-}
-/*==========Navbar==========*/
+/*header*/
 .navbar{
     background:#fff;/*!important*/
     padding: 10px 20px;/*!important*/
@@ -35,20 +19,9 @@ body{
     /* height: 60px;
     padding-left: 30px; */
 }
-.navbar-brand:hover{
-    color: #fff;
-    /*add bounce*/
-}
+
 .navbar-toggler{
     padding: 3px;
-}
-.line1, .line2, .line3{
-    width: 23px;
-    height: 3px;
-    margin: 5px;
-    background: #000;
-    transition: all 0.5s ease;
-    outline: none;
 }
 
 .navbar-toggler{
@@ -65,25 +38,185 @@ body{
     background: #25509c;
     color: #fff;
 }
-.nav-active{
-    color: #fff;
-    font-size: 25px;
-    padding: 10px 20px; /*!important*/
-    border-radius: 5px;
-    background: rgba(1, 1, 46, 0.322);
-    transition: background 2s ease;
+.navbar-nav{
+   
+   margin-left: 20px;
+   spacing: 20px;
 }
 .nav-active:hover{
     background: #25509c;
+    color:#fff;
 }
-.search-btn{
-    background: #25509c;
-    transition: all 1s ease;
-    color:lightblue;
+.navbar-nav li a{
+    float:right ;
+    text-align: left;
 }
-.search-btn:hover{
-    color: #fff;
+
+/* ==== top banner design ====*/
+.home .top-banner{
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(rgba(2, 0, 36, 0.349), rgba(9, 9, 121, 0.295)),url('grovect_images/4.jpg');
+    background-position: center;
+    background-size:cover;
+}
+.home .top-banner .content{
+    margin:auto;
+    width:100%;
+}
+.home .top-banner .text{
+    text-align: center;
+    width:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.home .top-banner .text h1{
+    font-size: 3.75rem;
+    color:#fff;
+    text-transform: uppercase;
+    margin-bottom:1.5rem;
+}
+.home .top-banner .text p{
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    color:#fff;
+    margin-bottom: 2.1rem;
+    width:40%;
+    margin:auto;
+    display:block;
+}
+/* ==== top banner design ====*/
+  span{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .section-head{
+    margin-bottom: 60px;
+  }
+  .section-head h4{
+    position: relative;
+    padding: 0;
+    color:#25509c;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    font-size:34px;
+    font-weight:700;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+  .section-head h4::before{
+    content:'';
+    width:60px;
+    height:3px;
     background:#25509c;
+    position:absolute;
+    bottom:-10px;
+    left:0;
+    right:0;
+    margin:0 auto;
+  }
+  .section-head h4 span{
+    font-weight: 700;
+    padding-bottom: 5px;
+    color:#2f2f2f;
+  } 
+  .section-head p{
+    color:#818181;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .item{
+    background:#fff;
+    text-align: center;
+    padding:30px 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border:5px solid rgba(0,0,0,0.07);
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item:hover{
+    background:#25509c;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item:hover .item,
+  .item:hover span.icon{
+    background:#fff;
+    border-radius: 10px;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item:hover h6,
+  .item:hover p{
+    color:#fff;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item .icon{
+    font-size:40px;
+    margin-bottom: 25px;
+    color:#25509c;
+    width:90px;
+    height:90px;
+    line-height: 96px;
+    border-radius: 50px;
+  }
+  .item .feature_box_col_one{
+    background:rgba(247,198,5,0.2);
+    color:#25509c;
+  }
+  .item .feature_box_col_two{
+    background: rgba(255, 77, 28, 0.15);
+    color:#25509c;
+  }
+  .item .feature_box_col_three{
+    background:rgba(0,147,38,0.15);
+    color:#25509c;
+  }
+  .item .feature_box_col_four{
+    background:rgba(0,108,255,0.15);
+    color:#25509c;
+  }
+  .item .feature_box_col_five{
+    background:rgba(146,39,255,0.15);
+    color:#25509c;
+  }
+  .item .feature_box_col_six{
+    background:rgba(23,39,246,0.15);
+    color:#25509c;
+  }
+  .item p{
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .item h6{
+    margin-bottom: 20px;
+    color:#2f2f2f;
+  }
+/*end*/
+.tag{
+    color:white;
+}
+.icons{
+    background: #25509c;
+    text-decoration: none;
+    color: #fff;
+}
+.icons a{
+    font-size: 25px;
+    transition: color 1s ease;
+    color: #fff;
+}
+.icons a:hover{
+    color: lightblue;
 }
 /*=====Header======*/
 .banner{
