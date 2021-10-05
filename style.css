@@ -74,7 +74,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
 }
-.home .top-banner .text h2{
+.home .top-banner .text h3{
     font-size: 3.75rem;
     color:#fff;
     text-transform: uppercase;
